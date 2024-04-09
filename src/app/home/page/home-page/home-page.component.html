@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <app-search></app-search>
+    </div>
+    
+    
+  </div>
+  <div class="row g-3">
+    <div  class=" col-md-4"*ngFor="let item of cardsOfPokemons; let i = index"  >
+      
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-12">
+                {{ item.name }}
+              </div>
+              <div class="col-6">
+                <div class="row">
+                    <div class="col-12">{{getType1(i)}}</div>
+                    <div class="col-12">{{getType2(i)}}</div>
+                </div>
+
+              </div>
+              <div class="col-6">
+                <!-- <img [src]="getImage(i)" alt=""> -->
+                <img src="../../../../assets/img/s-l1600.jpg" style="width: 40px;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
