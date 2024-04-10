@@ -39,3 +39,15 @@ section {
     width: 100px;
     height: 100px;
 }
+
+@media screen and (max-width: 768px) {
+    .shield {
+        //colocarlo siemore en la parte de arriba parte derecha
+        position: absolute;
+        top: -15px;
+        right: -18px;
+        z-index: 1000;
+        width: 80px;
+        height: 80px;
+    }
+}
