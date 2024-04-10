@@ -1,4 +1,19 @@
 <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Pokemon name</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Pikachu" (keyup.enter)="buscar(inputPokemon.value)" #inputPokemon>
-  </div>
+    <div class="row">
+        <div class="col-md-3">
+            <h3 class="fw-bold mt-2 fs-1">Pokedex</h3>
+        </div>
+        <div class="col-md-9">
+            <label for="exampleFormControlInput1" class="form-label">Pokemon name</label>
+
+            <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Charizard or 25"
+                (keyup.enter)="buscar(inputPokemon.value)"
+                #inputPokemon
+            />
+        </div>
+    </div>
+</div>

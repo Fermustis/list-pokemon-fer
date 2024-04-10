@@ -1,0 +1,442 @@
+$type-normal-b: #a8a77ab9;
+$type-normal-n: #a8a77a;
+$type-fighting-b: #c22e28b9;
+$type-fighting-n: #c22e28;
+$type-flying-b: #a98ff3b9;
+$type-flying-n: #a98ff3;
+$type-poison-b: #a33ea1b9;
+$type-poison-n: #a33ea1;
+$type-ground-b: #e2bf65b9;
+$type-ground-n: #e2bf65;
+$type-rock-b: #b6a136b9;
+$type-rock-n: #b6a136;
+$type-bug-b: #a6b91ab9;
+$type-bug-n: #a6b91a;
+$type-ghost-b: #735797b9;
+$type-ghost-n: #735797;
+$type-steel-b: #b7b7ceb9;
+$type-steel-n: #b7b7ce;
+$type-fire-b: #ee8130b9;
+$type-fire-n: #ee8130;
+$type-water-b: #6390f0b9;
+$type-water-n: #6390f0;
+$type-grass-b: #79c74cb9;
+$type-grass-n: #7ac74c;
+$type-electric-b: #f7d02cb9;
+$type-electric-n: #f7d02c;
+$type-psychic-b: #f95587b9;
+$type-psychic-n: #f95587;
+$type-ice-b: #96d9d6b9;
+$type-ice-n: #96d9d6;
+$type-dragon-b: #6f35fcb9;
+$type-dragon-n: #6f35fc;
+$type-dark-b: #705746b9;
+$type-dark-n: #705746;
+$type-fairy-b: #d685adb9;
+$type-fairy-n: #d685ad;
+$type-unknown-b: #68a090b9;
+$type-unknown-n: #68a090;
+$type-shadow-b: #68a090b9;
+$type-shadow-n: #68a090;
+.container {
+    background-color: #fdfbf6;
+}
+.cards {
+    .title-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+
+        border-radius: 0.5rem;
+    }
+
+    .type-normal {
+        &.body {
+            background-color: $type-normal-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-normal-n;
+        }
+    }
+    .type-fighting {
+        &.body {
+            background-color: $type-fighting-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-fighting-n;
+        }
+    }
+
+    .type-grass {
+        &.body {
+            background-color: $type-grass-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-grass-n;
+        }
+    }
+    .type-fire {
+        &.body {
+            background-color: $type-fire-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-fire-n;
+        }
+    }
+    .type-water {
+        &.body {
+            background-color: $type-water-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-water-n;
+        }
+    }
+    .type-electric {
+        &.body {
+            background-color: $type-electric-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-electric-n;
+        }
+    }
+    .type-ice {
+        &.body {
+            background-color: $type-ice-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-ice-n;
+        }
+    }
+    .type-psychic {
+        &.body {
+            background-color: $type-psychic-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-psychic-n;
+        }
+    }
+    .type-flying {
+        &.body {
+            background-color: $type-flying-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-flying-n;
+        }
+    }
+    .type-bug {
+        &.body {
+            background-color: $type-bug-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-bug-n;
+        }
+    }
+    .type-rock {
+        &.body {
+            background-color: $type-rock-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-rock-n;
+        }
+    }
+    .type-ghost {
+        &.body {
+            background-color: $type-ghost-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-ghost-n;
+        }
+    }
+    .type-dragon {
+        &.body {
+            background-color: $type-dragon-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-dragon-n;
+        }
+    }
+    .type-dark {
+        &.body {
+            background-color: $type-dark-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-dark-n;
+        }
+    }
+    .type-steel {
+        &.body {
+            background-color: $type-steel-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-steel-n;
+        }
+    }
+    .type-fairy {
+        &.body {
+            background-color: $type-fairy-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-fairy-n;
+        }
+    }
+    .type-unknown {
+        &.body {
+            background-color: $type-unknown-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-unknown-n;
+        }
+    }
+    .type-shadow {
+        &.body {
+            background-color: $type-shadow-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-shadow-n;
+        }
+    }
+    .type-poison {
+        &.body {
+            background-color: $type-poison-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-poison-n;
+        }
+    }
+    .type-ground {
+        &.body {
+            background-color: $type-ground-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-ground-n;
+        }
+    }
+    .type-ghost {
+        &.body {
+            background-color: $type-ghost-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-ghost-n;
+        }
+    }
+    .type-steel {
+        &.body {
+            background-color: $type-steel-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-steel-n;
+        }
+    }
+    .type-fairy {
+        &.body {
+            background-color: $type-fairy-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-fairy-n;
+        }
+    }
+    .type-unknown {
+        &.body {
+            background-color: $type-unknown-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-unknown-n;
+        }
+    }
+    .type-shadow {
+        &.body {
+            background-color: $type-shadow-b;
+        }
+        &.name {
+            border-radius: 0.5rem;
+            text-align: center;
+            padding: 0.1rem;
+            min-width: none;
+            max-width: 100px;
+            width: 100%;
+            background-color: $type-shadow-n;
+        }
+    }
+
+    .type-name {
+        font-size: 0.8rem;
+        font-weight: normal;
+        color: white;
+        text-align: center;
+        padding: 0.2rem;
+        border-radius: 0.5rem;
+    }
+    .background-image {
+        background-image: url('../../../../assets/img/pokeball.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 120px;
+        width: 120px;
+        position: relative;
+        z-index: 1;
+        // filter: blur(5px);
+        //opacity: 0.5;
+        .img-pokemon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 75%;
+            width: 75%;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .cards {
+        .background-image {
+            height: 100px;
+            width: 100px;
+        }
+    }
+}

@@ -1,36 +1,53 @@
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <app-search></app-search>
-    </div>
-    
-    
-  </div>
-  <div class="row g-3">
-    <div  class=" col-md-4"*ngFor="let item of cardsOfPokemons; let i = index"  >
-      
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-12">
-                {{ item.name }}
-              </div>
-              <div class="col-6">
-                <div class="row">
-                    <div class="col-12">{{getType1(i)}}</div>
-                    <div class="col-12">{{getType2(i)}}</div>
-                </div>
-
-              </div>
-              <div class="col-6">
-                <!-- <img [src]="getImage(i)" alt=""> -->
-                <img src="../../../../assets/img/s-l1600.jpg" style="width: 40px;">
-
-              </div>
-            </div>
-          </div>
+<div class="container mt-2 mb-3">
+    <div class="row mt-md-4">
+        <div class="col-12">
+            <app-search (item)="getDataByName($event)"></app-search>
         </div>
-      
     </div>
-  </div>
+    <div class="row g-3 vh-100 overflow-auto">
+        <div class="col-md-6 col-lg-4 cards" *ngFor="let item of infoPokemones; let i = index">
+            <div class="card" ngClass="{{ getStyleByType(i) }} body">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 title-name">
+                                    {{ item.name | titlecase }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="d-flex flex-column justify-content-center h-100">
+                                <div *ngIf="getType1(i) != ''" class="my-1" ngClass="{{ getStyleByType(i) }} name">
+                                    <span class="type-name">
+                                        {{ getType1(i) | titlecase }}
+                                    </span>
+                                </div>
+                                <div *ngIf="getType2(i) != ''" class="my-1" ngClass="{{ getStyleByType(i) }} name">
+                                    <span class="type-name">
+                                        {{ getType2(i) | titlecase }}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-center">
+                                <div class="background-image">
+                                    <img
+                                        class="img-pokemon"
+                                        [src]="getImage(i)"
+                                        alt=""
+                                        (load)="onLoad()"
+                                        [ngStyle]="{ display: hasLoaded ? '' : 'none' }"
+                                    />
+                                    <img *ngIf="!hasLoaded" src="../../../../assets/loader.svg" class="img-pokemon" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
