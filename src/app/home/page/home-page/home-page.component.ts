@@ -14,7 +14,7 @@ export class HomePageComponent implements OnInit {
     public responsePokemons: PokemonResponse | null = null;
     public cardsOfPokemons: Result[] | null = [];
     public infoPokemones: PokemonByUrlResponse[] = [];
-    public catalogoOfTypes = new Set();
+    
     public hasLoaded: boolean = false;
 
     constructor(private pkservice: PokemonServiceService) {}

@@ -15,7 +15,7 @@ export class PokemonServiceService {
 
     getPokemons(): Observable<PokemonResponse | null> {
         return this.http.get<PokemonResponse>(`${this.url}pokemon?limit=${this.limit}&offset=0`).pipe(
-            //regresar solo el resul del response
+            
 
             catchError(() => of(null))
         );

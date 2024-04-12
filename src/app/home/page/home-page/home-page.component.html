@@ -19,12 +19,20 @@
 
                         <div class="col-6">
                             <div class="d-flex flex-column justify-content-center h-100">
-                                <div *ngIf="getType1(i) != ''" class="my-1" ngClass="{{ getStyleByType(i) }} name">
+                                <div
+                                    *ngIf="getType1(i) != ''"
+                                    class="my-1 type-badges"
+                                    ngClass="{{ getStyleByType(i) }} name"
+                                >
                                     <span class="type-name">
                                         {{ getType1(i) | titlecase }}
                                     </span>
                                 </div>
-                                <div *ngIf="getType2(i) != ''" class="my-1" ngClass="{{ getStyleByType(i) }} name">
+                                <div
+                                    *ngIf="getType2(i) != ''"
+                                    class="my-1 type-badges"
+                                    ngClass="{{ getStyleByType(i) }} name"
+                                >
                                     <span class="type-name">
                                         {{ getType2(i) | titlecase }}
                                     </span>
